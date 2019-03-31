@@ -6,6 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favico.png" type="image/png">
         <title>Lidiaxp</title>
+
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+        <link href="css/freelancer.min.css" rel="stylesheet">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -19,15 +28,13 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-
-        <link href="css/freelancer.min.css" rel="stylesheet">
     </head>
     <body>
         
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
                     <div class="container box_1620">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <a class="navbar-brand logo_h" href="index.html"><img src="img/branco.png" alt=""></a>
@@ -95,8 +102,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/char.PNG" alt="">
-                                <a class="light" href="img/gallery/design/char.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p1">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/char.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Charmander</h4>
@@ -107,8 +119,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design mr">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/3d.PNG" alt="">
-                                <a class="light" href="img/gallery/design/3d.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p2">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/3d.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Company</h4>
@@ -119,8 +136,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/iot/Imagem2.jpg" alt="">
-                                <a class="light" href="img/gallery/iot/Imagem2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p3">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem2.jpg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Sumo Robot (Kirito)</h4>
@@ -131,8 +153,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 ia design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/ai/foto.PNG" alt="">
-                                <a class="light" href="img/gallery/ai/foto.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p4">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/foto.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Style Transfer</h4>
@@ -143,8 +170,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games mr">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/ar.PNG" alt="">
-                                <a class="light" href="img/gallery/game/ar.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p5">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/ar.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Augmented Reality Game</h4>
@@ -155,11 +187,16 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/mydreamsite.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/mydreamsite.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p6">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/mydreamsite.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
-                                <h4>Website to IoT (MyDream)</h4>
+                                <h4>Website to IoT  (MyDream)</h4>
                                 <p>School Project</p>
                             </div>
                         </div>
@@ -168,8 +205,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/ai/knn.PNG" alt="">
-                                <a class="light" href="img/gallery/ai/knn.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p7">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/knn.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>K-Nearest neighbors on Telecomucation</h4>
@@ -180,8 +222,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/ai/music.PNG" alt="">
-                                <a class="light" href="img/gallery/ai/music.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p8">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/music.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>SLTM to Music</h4>
@@ -192,8 +239,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/ai/texto.PNG" alt="">
-                                <a class="light" href="img/gallery/ai/texto.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p9">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/texto.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>SLTM to Text</h4>
@@ -205,8 +257,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/iot/Capturar.PNG" alt="">
-                                <a class="light" href="img/gallery/iot/Capturar.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p10">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Capturar.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Coke Piano</h4>
@@ -217,8 +274,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 iot sistema">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/iot/Imagem1.jpg" alt="">
-                                <a class="light" href="img/gallery/iot/Imagem1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p11">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem1.jpg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Residential Automation Model</h4>
@@ -229,8 +291,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/iot/Imagem3.png" alt="">
-                                <a class="light" href="img/gallery/iot/Imagem3.png"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p12">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem3.png" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Robber Dancer (Bob)</h4>
@@ -241,8 +308,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/iot/Imagem4.png" alt="">
-                                <a class="light" href="img/gallery/iot/Imagem4.png"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p13">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem4.png" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Joystick with Cardboard</h4>
@@ -254,8 +326,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/game.PNG" alt="">
-                                <a class="light" href="img/gallery/game/game.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p14">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/game.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Adventure Game (Koffie)</h4>
@@ -266,8 +343,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/drunkpig.PNG" alt="">
-                                <a class="light" href="img/gallery/game/drunkpig.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p15">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/drunkpig.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>3D Adventure Game (Drunk Pig)</h4>
@@ -278,8 +360,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/duckispointer.PNG" alt="">
-                                <a class="light" href="img/gallery/game/duckispointer.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p16">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/duckispointer.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Shooter Game (Duck is Pointer)</h4>
@@ -290,8 +377,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/eevee.PNG" alt="">
-                                <a class="light" href="img/gallery/game/eevee.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p17">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/eevee.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Endless Runner Game (Run eevee run)</h4>
@@ -302,8 +394,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 games">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/game/love.PNG" alt="">
-                                <a class="light" href="img/gallery/game/love.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p18">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/love.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Endless Runner Game (Pikachu is Mine)</h4>
@@ -315,8 +412,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 mr">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/mr/predio.PNG" alt="">
-                                <a class="light" href="img/gallery/mr/predio.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p19">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/mr/predio.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Walk around a Building</h4>
@@ -324,12 +426,16 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema mr">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/1.jpg" alt="">
-                                <a class="light" href="img/gallery/sistema/1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p20">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/1.jpg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Virtual Reality to Telecomunication Problem (Ziwi)</h4>
@@ -340,8 +446,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/ag.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/ag.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p21">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/ag.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Website to Telecomunication Problem (Ziwi)</h4>
@@ -352,8 +463,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/chat.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/chat.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p22">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/chat.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Chatbot to IoT (MyDream)</h4>
@@ -364,8 +480,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/mydreamserevr.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/mydreamserevr.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p23">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/mydreamserevr.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>IoT Server  (MyDream)</h4>
@@ -376,8 +497,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/4.jpg" alt="">
-                                <a class="light" href="img/gallery/sistema/4.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p24">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/4.jpg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>First Screen on Ziwi App</h4>
@@ -388,8 +514,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema ia">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/ragsemtomada.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/ragsemtomada.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p25">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/ragsemtomada.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Response of the Genetic Algorithm in Ziwi</h4>
@@ -400,8 +531,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/appmydream.PNG" alt="">
-                                <a class="light" href="img/gallery/sistema/appmydream.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p26">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/appmydream.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Mobile App to IoT (MyDream)</h4>
@@ -412,8 +548,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 sistema">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/sistema/2.jpg" alt="">
-                                <a class="light" href="img/gallery/sistema/2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p27">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/2.jpg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Android App to Telecomunication Problem (Ziwi)</h4>
@@ -422,16 +563,18 @@
                         </div>
                     </div>
 
-
-
-
-
-
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/bulba.PNG" alt="">
-                                <a class="light" href="img/gallery/design/bulba.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <div class="g_img_item">
+                                    <a class="portfolio-item d-block mx-auto" href="#p28">
+                                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="img/gallery/design/bulba.PNG" alt="">
+                                    </a>
+                                </div>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Bulbassaur)</h4>
@@ -442,8 +585,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/eeveelution.PNG" alt="">
-                                <a class="light" href="img/gallery/design/eeveelution.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p29">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/eeveelution.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Eeveelutions)</h4>
@@ -454,8 +602,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/graph.png" alt="">
-                                <a class="light" href="img/gallery/design/graph.png"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p30">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/graph.png" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Animated Graphic</h4>
@@ -466,8 +619,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/Mascara.PNG" alt="">
-                                <a class="light" href="img/gallery/design/Mascara.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p31">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/Mascara.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Mountain Wolves</h4>
@@ -478,8 +636,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/model.jpeg" alt="">
-                                <a class="light" href="img/gallery/design/model.jpeg"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p32">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/model.jpeg" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Model Agency Advertising Campaign</h4>
@@ -490,8 +653,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/overwatch.PNG" alt="">
-                                <a class="light" href="img/gallery/design/overwatch.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p33">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/overwatch.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Overwatch)</h4>
@@ -502,8 +670,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/party.PNG" alt="">
-                                <a class="light" href="img/gallery/design/party.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p34">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/party.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Party Banner</h4>
@@ -515,8 +688,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/party2.PNG" alt="">
-                                <a class="light" href="img/gallery/design/party2.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p35">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/party2.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Party Banner</h4>
@@ -527,8 +705,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/people.PNG" alt="">
-                                <a class="light" href="img/gallery/design/people.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p36">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/people.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Pokémon)</h4>
@@ -539,8 +722,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/pikachu.PNG" alt="">
-                                <a class="light" href="img/gallery/design/pikachu.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p37">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/pikachu.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Pikachu)</h4>
@@ -551,8 +739,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/reconstrucao.PNG" alt="">
-                                <a class="light" href="img/gallery/design/reconstrucao.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p38">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/reconstrucao.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Reconstruction of Images</h4>
@@ -563,8 +756,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/squir.PNG" alt="">
-                                <a class="light" href="img/gallery/design/squir.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p39">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/squir.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Squirtle)</h4>
@@ -575,8 +773,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design sistema">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/telas.PNG" alt="">
-                                <a class="light" href="img/gallery/design/telas.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p40">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/telas.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Ccreens for Application Prototype</h4>
@@ -587,8 +790,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 design">
                         <div class="h_gallery_item">
                             <div class="g_img_item">
-                                <img class="img-fluid" src="img/gallery/design/zumbi.PNG" alt="">
-                                <a class="light" href="img/gallery/design/zumbi.PNG"><img src="img/gallery/icon.png" alt=""></a>
+                                <a class="portfolio-item d-block mx-auto" href="#p41">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/zumbi.PNG" alt="">
+                                </a>
                             </div>
                             <div class="g_item_text">
                                 <h4>Digital Painting (Zumbi)</h4>
@@ -747,5 +955,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/theme.js"></script>
 
         <script src="js/freelancer.min.js"></script>
+
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="vendors/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
     </body>
 </html>
