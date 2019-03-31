@@ -4,8 +4,17 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>MeetMe Personal</title>
+        <link rel="icon" href="img/favico.png" type="image/png">
+        <title>Lidiaxp</title>
+
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+        <link href="css/freelancer.min.css" rel="stylesheet">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -15,6 +24,7 @@
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/animate-css/animate.css">
         <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -24,40 +34,28 @@
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
+                <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+                    <div class="container box_1620">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html"><img src="img/branco.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="index.html">About</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="index.html">Experiences</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>  
+                                <!--<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+                            </ul>
+                        </div>  
+                    </div>
+                </nav>
             </div>
         </header>
         <!--================Header Menu Area =================-->
@@ -68,10 +66,10 @@
 				<div class="banner_inner d-flex align-items-center">
 					<div class="container">
 						<div class="banner_content text-center">
-							<h2>Contact Us</h2>
+							<h2>Portfolio</h2>
 							<div class="page_link">
 								<a href="index.html">Home</a>
-								<a href="contact.html">Contact Us</a>
+								<a href="portfolio.html">Portfolio</a>
 							</div>
 						</div>
 					</div>
@@ -80,34 +78,757 @@
         </section>
         <!--================End Home Banner Area =================-->
         
-        <!--================Contact Area =================-->
-        <section class="contact_area p_120">
+        <!--================Home Gallery Area =================-->
+        <section class="home_gallery_area p_120" id="portfolio">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
+                <div class="main_title">
+                    <h2>Latest Projects</h2>
+                    <p>The impossible does not exist</p>
                 </div>
+                <div class="isotope_fillter">
+                    <ul class="gallery_filter list">
+                        <li class="active" data-filter="*"><a href="#">All</a></li>
+                        <li data-filter=".iot"><a href="#">Robotic / IoT</a></li>
+                        <li data-filter=".ia"><a href="#">Artificial Intelligence</a></li>
+                        <li data-filter=".design"><a href="#">Design</a></li>
+                        <li data-filter=".sistema"><a href="#">Systems</a></li>
+                        <li data-filter=".games"><a href="#">Games</a></li>
+                        <li data-filter=".mr"><a href="#">Mixed Reality</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="gallery_f_inner row imageGallery1">
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p1">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/char.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Charmander</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design mr">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p2">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/3d.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Company</h4>
+                                <p>Client Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p3">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Sumo Robot (Kirito)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 ia design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p4">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/foto.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Style Transfer</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 games mr">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p5">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/ar.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Augmented Reality Game</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p6">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/mydreamsite.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Website to IoT  (MyDream)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p7">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/knn.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>K-Nearest neighbors on Telecomucation</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p8">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/music.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>SLTM to Music</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p9">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/ai/texto.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>SLTM to Text</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p10">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Capturar.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Coke Piano</h4>
+                                <p>Client Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 iot sistema">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p11">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Residential Automation Model</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p12">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Robber Dancer (Bob)</h4>
+                                <p>Client Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p13">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/iot/Imagem4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Joystick with Cardboard</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 games design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p14">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/game.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Adventure Game (Koffie)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 games">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p15">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/drunkpig.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>3D Adventure Game (Drunk Pig)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 games ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p16">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/duckispointer.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Shooter Game (Duck is Pointer)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 games">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p17">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/eevee.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Endless Runner Game (Run eevee run)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 games">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p18">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/game/love.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Endless Runner Game (Pikachu is Mine)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 mr">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p19">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/mr/predio.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Walk around a Building</h4>
+                                <p>Client Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema mr">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p20">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Virtual Reality to Telecomunication Problem (Ziwi)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p21">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/ag.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Website to Telecomunication Problem (Ziwi)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p22">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/chat.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Chatbot to IoT (MyDream)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p23">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/mydreamserevr.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>IoT Server  (MyDream)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p24">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>First Screen on Ziwi App</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema ia">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p25">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/ragsemtomada.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Response of the Genetic Algorithm in Ziwi</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema iot">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p26">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/appmydream.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Mobile App to IoT (MyDream)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 sistema">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p27">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/sistema/2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Android App to Telecomunication Problem (Ziwi)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <div class="g_img_item">
+                                    <a class="portfolio-item d-block mx-auto" href="#p28">
+                                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="img/gallery/design/bulba.PNG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Bulbassaur)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p29">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/eeveelution.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Eeveelutions)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p30">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/graph.png" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Animated Graphic</h4>
+                                <p>Client Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p31">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/Mascara.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Mountain Wolves</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p32">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/model.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Model Agency Advertising Campaign</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p33">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/overwatch.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Overwatch)</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p34">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/party.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Party Banner</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p35">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/party2.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Party Banner</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p36">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/people.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Pokémon)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p37">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/pikachu.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Pikachu)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p38">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/reconstrucao.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Reconstruction of Images</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p39">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/squir.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Squirtle)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design sistema">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p40">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/telas.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Ccreens for Application Prototype</h4>
+                                <p>School Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 design">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <a class="portfolio-item d-block mx-auto" href="#p41">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/gallery/design/zumbi.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Digital Painting (Zumbi)</h4>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Gallery Area ===============l==-->
+        
+        <!--================Contact Area =================-
+        <section class="testimonials_area p_120" id="contact">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="contact_info">
                             <div class="info_item">
                                 <i class="lnr lnr-home"></i>
-                                <h6>California, United States</h6>
-                                <p>Santa monica bullevard</p>
+                                <h6>Pará, Brazil</h6>
+                                <p>Belém</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">00 (440) 9865 562</a></h6>
-                                <p>Mon to Fri 9am to 6 pm</p>
+                                <h6><a href="#">55 (091) 98020 5620</a></h6>
+                                <p>Mon to Fri 9 am to 7 pm</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">support@colorlib.com</a></h6>
-                                <p>Send us your query anytime!</p>
+                                <h6><a href="#">lidiagianne@gmail.com</a></h6>
+                                <p>Send me your query anytime!</p>
                             </div>
                         </div>
                     </div>
@@ -137,60 +858,45 @@
                 </div>
             </div>
         </section>
-        <!--================Contact Area =================-->
+        <!================End Contact Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="container">
+                <div class="row footer_inner">
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title">
+                                <h3>About Me</h3>
+                            </div>
+                            <p>Pokémon and technology lover. I love to test everything that's new. I love spending time on the internet looking for different things. Its slogan is: if no one ever did you will be the first one, and if someone else has already done it, you can do better.</p>
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
+                        </aside>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        
+                    </div>
+                    <div class="col-lg-2">
+                        <aside class="f_widget social_widget">
+                            <div class="f_title">
+                                <h3>Follow Me</h3>
                             </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
+                            <p>Let us be social</p>
+                            <ul class="list">
+                                <li><a href="https://www.facebook.com/lidiaxpp"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.behance.net/lidiagiann7d7b"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/lidia-rocha-baab5062/"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!--================End Footer Area =================-->
         
-        <!--================Contact Success and Error message Area =================-->
+        <!--================Contact Success and Error message Area =================-
         <div id="success" class="modal modal-message fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -205,7 +911,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
 
-        <!-- Modals error -->
+        <! Modals error >
 
         <div id="error" class="modal modal-message fade" role="dialog">
             <div class="modal-dialog">
@@ -220,11 +926,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 </div>
             </div>
         </div>
-        <!--================End Contact Success and Error message Area =================-->
-        
-        
-        
-        
+        <!================End Contact Success and Error message Area =================-->
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.3.1.min.js"></script>
@@ -235,12 +938,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
         <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
         <!-- contact js -->
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
@@ -249,5 +953,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
+
+        <script src="js/freelancer.min.js"></script>
+
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="vendors/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
     </body>
 </html>
