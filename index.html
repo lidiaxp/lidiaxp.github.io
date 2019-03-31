@@ -1,12 +1,19 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
+    <head>  
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favico.png" type="image/png">
         <title>Lidiaxp</title>
-        <!-- Bootstrap CSS -->
+        
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  		<link href="css/freelancer.min.css" rel="stylesheet">
+
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,18 +23,16 @@
         <link rel="stylesheet" href="vendors/animate-css/animate.css">
         <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
         <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
+        
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-
-        <link href="css/freelancer.min.css" rel="stylesheet">
     </head>
-    <body>
-        
+
+    <body>    
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
+            	<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<a class="navbar-brand logo_h" href="index.html"><img src="img/branco.png" alt=""></a>
@@ -52,7 +57,7 @@
             </div>
         </header>
         <!--================Header Menu Area =================-->
-        
+
         <!--================Home Banner Area =================-->
         <section class="home_banner_area" id="top">
            	<div class="container box_1620">
@@ -300,9 +305,9 @@
         	</div>
         </section>
         <!--================End Feature Area =================-->
-        
+
         <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120" id="portfolio">
+        <section class="home_gallery_area p_120 portfolio" id="portfolio">
         	<div class="container">
         		<div class="main_title">
         			<h2>Latest Projects</h2>
@@ -323,22 +328,30 @@
         	<div class="container">
         		<div class="gallery_f_inner row imageGallery1">
         			<div class="col-lg-4 col-md-4 col-sm-6 design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/design/char.PNG" alt="">
-        						<a class="light" href="img/gallery/design/char.PNG"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Charmander</h4>
-        						<p>Personal Project</p>
+        				<div>
+ 						    <div class="h_gallery_item">
+        						<div class="g_img_item">
+        							<a class="portfolio-item d-block mx-auto" href="#p1">
+            							<div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              								<div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+        		             				</div>
+            							</div>
+            							<img class="img-fluid" src="img/gallery/design/char.PNG" alt="">
+          							</a>
+        						</div>
+        						<div class="g_item_text">
+        							<h4>Charmander</h4>
+        							<p>Personal Project</p>
+        						</div>
         					</div>
         				</div>
+
         			</div>
         			<div class="col-lg-4 col-md-4 col-sm-6 design mr">
         				<div class="h_gallery_item">
         					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/design/3d.PNG" alt="">
-        						<a class="light" href="img/gallery/design/3d.PNG"><img src="img/gallery/icon.png" alt=""></a>
+        						<img class="img-fluid" src="img/gallery/design/3D.PNG" alt="">
+        						<a class="light" href="img/gallery/design/3D.PNG"><img src="img/gallery/icon.png" alt=""></a>
         					</div>
         					<div class="g_item_text">
         						<h4>Company</h4>
@@ -373,8 +386,8 @@
         			<div class="col-lg-4 col-md-4 col-sm-6 games mr">
         				<div class="h_gallery_item">
         					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/ai/ar.PNG" alt="">
-        						<a class="light" href="img/gallery/ai/ar.PNG"><img src="img/gallery/icon.png" alt=""></a>
+        						<img class="img-fluid" src="img/gallery/game/ar.PNG" alt="">
+        						<a class="light" href="img/gallery/game/ar.PNG"><img src="img/gallery/icon.png" alt=""></a>
         					</div>
         					<div class="g_item_text">
         						<h4>Augmented Reality Game</h4>
@@ -452,7 +465,33 @@
         	</div>
         </section>
         <!--================End Contact Area =================-->
-        
+
+
+        <!--================Start Modal =================-->
+<div class="portfolio-modal mfp-hide" id="p1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  		<!--================End Models =================-->
+
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">
         	<div class="container">
@@ -548,5 +587,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/theme.js"></script>
 
         <script src="js/freelancer.min.js"></script>
+
+        <script src="vendors/jquery/jquery.min.js"></script>
+  		<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  		<script src="vendors/jquery-easing/jquery.easing.min.js"></script>
+  		<script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
     </body>
 </html>
