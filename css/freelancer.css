@@ -9,6 +9,7 @@
   margin: 1rem calc(1rem - 8px);
   position: relative;
   z-index: 2;
+  border-radius: 20px;
   -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
