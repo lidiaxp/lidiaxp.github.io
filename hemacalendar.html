@@ -1,72 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinos Sem Golpes Baixos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Placa de Treinos</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f0f4f7, #d9e2ec);
+      font-family: Arial, sans-serif;
+      background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      color: #2c3e50;
     }
 
-    .content {
+    .placa {
+      width: 900px;
+      height: 400px;
+      background: #2e7d32;
+      color: white;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      border: 5px solid #1b5e20;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .placa-interna {
+      background: #eeeeee;
+      color: black;
+      padding: 20px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .linha {
+      font-size: 2em;
+      font-weight: bold;
       text-align: center;
+    }
+
+    .numero {
       background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .number {
-      font-size: 3em;
-      color: #2980b9;
-      margin: 0.3em 0;
-    }
-
-    .label {
+      padding: 0.2em 0.6em;
+      margin: 0 0.2em;
+      border: 2px solid black;
+      display: inline-block;
       font-size: 1.2em;
-      color: #555;
+    }
+
+	#y-record {
+		color: black;
+	}
+
+    .linha-verde {
+      background: #1b5e20;
+      color: white;
+      padding: 15px;
+      font-size: 1.8em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sem-golpes {
+      font-size: 1.6em;
+      margin: 15px 0;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <div class="label">Estamos trabalhando há</div>
-    <div class="number" id="x-count">X</div>
-    <div class="label">treinos sem golpes baixos</div>
+  <div class="placa">
+    <div class="placa-interna">
+      <div class="linha">ESTAMOS TRABALHANDO HÁ 
+        <span class="numero" id="x-count">1</span> TREINOS SEM GOLPES BAIXOS
+      </div>
 
-    <div class="label" style="margin-top: 2em;">Nosso recorde era de</div>
-    <div class="number" id="y-record">Y</div>
-    <div class="label">treinos</div>
+      <!-- <div class="sem-golpes">SEM GOLPES BAIXOS</div> -->
+
+      <div class="linha-verde">NOSSO RECORDE ERA DE 
+        <span class="numero" id="y-record">40</span> TREINOS
+      </div>
+    </div>
   </div>
 
   <script>
-    // Configurações iniciais
-    const startDate = new Date("2025-05-28"); // YYYY-MM-DD
-    const initialY = 40;
+    const startDate = new Date("2025-05-28"); 
 
-    // Função para contar segundas, quartas e sextas até hoje
-    function countTrainingDays(from, to) {
+    const initialY = 40;
+    const today = new Date();
+
+    function countTreinos(from, to) {
       let count = 0;
       const date = new Date(from);
       while (date <= to) {
-        const day = date.getDay();
+        const day = date.getDay(); 
         if (day === 1 || day === 3 || day === 5) count++;
         date.setDate(date.getDate() + 1);
       }
       return count;
     }
 
-    const today = new Date();
-    const X = countTrainingDays(startDate, today);
+    const X = countTreinos(startDate, today);
     const Y = Math.max(initialY, X);
 
     document.getElementById("x-count").textContent = X;
