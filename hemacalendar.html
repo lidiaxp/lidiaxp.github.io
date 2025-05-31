@@ -12,35 +12,37 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .placa {
-      width: 900px;
-      height: 400px;
       background: #2e7d32;
       color: white;
-      position: relative;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
       border: 5px solid #1b5e20;
-      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
       box-sizing: border-box;
+      max-width: 100%;
+      width: 600px;
+      padding: 10px;
     }
 
     .placa-interna {
       background: #eeeeee;
       color: black;
       padding: 20px;
-      height: 90%;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 20px;
     }
 
     .linha {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: bold;
       text-align: center;
+      word-wrap: break-word;
     }
 
     .numero {
@@ -52,43 +54,54 @@
       font-size: 1.2em;
     }
 
-	#y-record {
-		color: black;
-	}
+    #y-record {
+      color: black;
+    }
 
     .linha-verde {
       background: #1b5e20;
       color: white;
       padding: 15px;
-      font-size: 1.8em;
+      font-size: 1.3em;
       font-weight: bold;
       text-align: center;
+      word-wrap: break-word;
     }
 
-    .sem-golpes {
-      font-size: 1.6em;
-      margin: 15px 0;
+    /* Media queries for smaller screens */
+    @media (max-width: 600px) {
+      .linha {
+        font-size: 1.2em;
+      }
+      .linha-verde {
+        font-size: 1.1em;
+        padding: 10px;
+      }
+      .numero {
+        font-size: 1em;
+      }
     }
+
   </style>
 </head>
 <body>
   <div class="placa">
     <div class="placa-interna">
-      <div class="linha">ESTAMOS TRABALHANDO HÁ 
-        <span class="numero" id="x-count">1</span> TREINOS SEM GOLPES BAIXOS
+      <div class="linha">
+        ESTAMOS TRABALHANDO HÁ 
+        <span class="numero" id="x-count">1</span> 
+        TREINOS SEM GOLPES BAIXOS
       </div>
-
-      <!-- <div class="sem-golpes">SEM GOLPES BAIXOS</div> -->
-
-      <div class="linha-verde">NOSSO RECORDE ERA DE 
-        <span class="numero" id="y-record">40</span> TREINOS
+      <div class="linha-verde">
+        NOSSO RECORDE ERA DE 
+        <span class="numero" id="y-record">40</span> 
+        TREINOS
       </div>
     </div>
   </div>
 
   <script>
-    const startDate = new Date("2025-05-28"); 
-
+    const startDate = new Date("2025-05-28");
     const initialY = 40;
     const today = new Date();
 
@@ -96,7 +109,7 @@
       let count = 0;
       const date = new Date(from);
       while (date <= to) {
-        const day = date.getDay(); 
+        const day = date.getDay();
         if (day === 1 || day === 3 || day === 5) count++;
         date.setDate(date.getDate() + 1);
       }
