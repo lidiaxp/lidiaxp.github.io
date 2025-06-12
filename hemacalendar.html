@@ -104,23 +104,54 @@
     const startDate = new Date("2025-05-28");
     const initialY = 40;
     const today = new Date();
-
+  
+    // Format: 'YYYY-MM-DD'
+    const exceptionDays = [
+      "2025-06-13"    // did not have kendo class
+    ];
+  
+    const extraDays = [
+      "2025-06-08"    // swordplay event
+    ];
+  
+    function toDateString(date) {
+      return date.toISOString().split("T")[0]; // YYYY-MM-DD
+    }
+  
     function countTreinos(from, to) {
       let count = 0;
+      const seen = new Set();
       const date = new Date(from);
+  
       while (date <= to) {
+        const dayStr = toDateString(date);
         const day = date.getDay();
-        if (day === 1 || day === 3 || day === 5) count++;
+  
+        if ((day === 1 || day === 3 || day === 5) && !exceptionDays.includes(dayStr)) {
+          count++;
+          seen.add(dayStr);
+        }
         date.setDate(date.getDate() + 1);
       }
+  
+      // Count extra days if they are within range and not already counted
+      for (const extra of extraDays) {
+        const extraDate = new Date(extra);
+        const extraStr = toDateString(extraDate);
+        if (extraDate >= from && extraDate <= to && !seen.has(extraStr)) {
+          count++;
+        }
+      }
+  
       return count;
     }
-
+  
     const X = countTreinos(startDate, today);
     const Y = Math.max(initialY, X);
-
+  
     document.getElementById("x-count").textContent = X;
     document.getElementById("y-record").textContent = Y;
   </script>
+  
 </body>
 </html>
